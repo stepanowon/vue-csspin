@@ -1,6 +1,6 @@
 {
   "name": "vue-csspin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "vue spinner component for vue.js 3.x(css-pin wrapper)",
   "private": false,
   "main": "dist/vue-csspin.common.js",
@@ -9,7 +9,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target lib --filename vue-csspin --name VueCsspin src/index.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "npm run build:lib && npm publish --access public"
   },
   "repository": {
     "type": "git",
