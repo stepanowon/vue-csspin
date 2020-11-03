@@ -1,4 +1,4 @@
-# VueCsspin
+# vue-csspin
 Spinner Component for Vue.js 3.x.
 This project is an wrapper of [CSSPIN](https://www.npmjs.com/package/csspin)
 
