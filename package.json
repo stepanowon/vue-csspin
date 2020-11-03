@@ -1,12 +1,32 @@
 {
-  "name": "vue-css-pin",
+  "name": "vue-csspin",
   "version": "0.1.0",
-  "private": true,
+  "description": "vue spinner component for vue.js 3.x(css-pin wrapper)",
+  "private": false,
+  "main": "dist/vue-csspin.common.js",
+  "unpkg": "dist/vue-csspin.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --target lib --filename vue-csspin --name VueCsspin src/index.js",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stepanowon/vue-csspin.git"
+  },
+  "keywords": [
+    "csspin",
+    "spinner",
+    "loader",
+    "Vue 3"
+  ],
+  "author": "Stephen Won",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stepanowon/vue-csspin/issues"
+  },
+  "homepage": "https://github.com/stepanowon/vue-csspin",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0"

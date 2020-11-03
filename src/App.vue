@@ -1,15 +1,49 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h2>VueCsspin Test</h2><hr />
+    Loading Message : <input type="text" v-model="message" /><br />
+    Spinner Style : 
+    <select v-model="spinStyle">
+        <option>cp-round</option>
+        <option>cp-pinwheel</option>
+        <option>cp-balls</option>
+        <option>cp-bubble</option>
+        <option>cp-flip</option>
+        <option>cp-hue</option>
+        <option>cp-skeleton</option>
+        <option>cp-eclipse</option>
+        <option>cp-boxes</option>
+        <option>cp-morph</option>
+        <option>cp-heart</option>
+        <option>cp-meter</option>
+    </select><br />
+    <button @click="viewVueCsspin">Test Component</button>
+    <VueCsspin v-if="visible" :message="message" :spinStyle="spinStyle" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VueCsspin from './components/VueCsspin.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    VueCsspin
+  },
+  data() {
+    return { 
+      visible: false,
+      message: "Loading",
+      spinStyle : "cp-round"
+    };
+  },
+  methods : {
+    viewVueCsspin() {
+      this.visible = true;
+      setTimeout(()=>{
+        this.visible = false;
+      }, 3000)
+    }
   }
 }
 </script>
