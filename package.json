@@ -29,6 +29,7 @@
   "homepage": "https://github.com/stepanowon/vue-csspin",
   "dependencies": {
     "core-js": "^3.6.5",
+    "csspin": "^1.1.4",
     "vue": "^3.0.0"
   },
   "devDependencies": {

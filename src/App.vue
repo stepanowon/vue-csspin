@@ -18,7 +18,7 @@
         <option>cp-meter</option>
     </select><br />
     <button @click="viewVueCsspin">Test Component</button>
-    <VueCsspin v-if="visible" :message="message" :spinStyle="spinStyle" />
+    <vue-csspin v-if="visible" :message="message" :spin-style="spinStyle" />
   </div>
 </template>
 
@@ -42,7 +42,7 @@ export default {
       this.visible = true;
       setTimeout(()=>{
         this.visible = false;
-      }, 3000)
+      }, 5000)
     }
   }
 }
