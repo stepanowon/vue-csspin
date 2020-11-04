@@ -8,14 +8,13 @@
 </template>
 
 <script>
-const VueCsspin = {
+export default {
     name : "VueCsspin",  
     props : {
         message : { type:String, default:"Loading" },
         spinStyle : { type:String, default:"cp-round" },
     } 
 }
-export default VueCsspin;
 </script>
 
 <style>
