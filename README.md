@@ -17,44 +17,14 @@ This project is an wrapper of [CSSPIN](https://www.npmjs.com/package/csspin)
 ## License
 MIT 
 ## Usage  
-#### CDN - install
-~~~
-<script type="text/javascript" src="https://unpkg.com/vue@next"></script>
-<script type="text/javascript" src="https://unpkg.com/vue-csspin"></script>
-~~~
-#### CDN - usage
-~~~
-<div id="app">
-	<div>
-		<vue-csspin v-if="visible" :message="message" :spinStyle="spinStyle" />
-	</div>
-</div>
-<script src="https://unpkg.com/vue@next"></script>
-<script src="https://unpkg.com/youtube-vue3" type="text/javascript"></script>
-<script type="text/javascript">
-const app = Vue.createApp({
-	name : "App",
-	data() {
-		return {
-		  message:"Loading", spinStyle:"cp-round", visible: true
-		}
-	},
-
-})
-VueCsspin.default(app)
-const vm = app.mount("#app")
-</script>
-......
-~~~
-##
-#### NPM - install
+#### install
 ~~~
 npm install --save vue-csspin
 - or -
 yarn add vue-csspin
 ~~~
 
-#### NPM - usage
+#### usage
 ~~~
 <template>
   <div>
@@ -81,7 +51,8 @@ yarn add vue-csspin
 </template>
 
 <script>
-import VueCsspin from './components/VueCsspin.vue'
+import { VueCsspin } from 'vue-csspin';
+import 'vue-csspin/dist/vue-csspin.css';
 
 export default {
   name: 'App',
@@ -117,4 +88,5 @@ export default {
      - Spinner Style
      - default : "cp-round"
      - available value : "cp-round", "cp-pinwheel", "cp-bubble", "cp-flip", "cp-hue", "cp-skeleton", "cp-eclipse", "cp-boxes", "cp-morph", "cp-heart", "cp-meter"
+     - about more detail style ---> https://webkul.github.io/csspin/
 

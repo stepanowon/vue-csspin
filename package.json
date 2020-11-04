@@ -1,6 +1,6 @@
 {
   "name": "vue-csspin",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "vue spinner component for vue.js 3.x(css-pin wrapper)",
   "private": false,
   "main": "dist/vue-csspin.common.js",

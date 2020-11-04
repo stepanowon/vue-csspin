@@ -1,4 +1,4 @@
-import VueCsspin from './components/VueCsspin.vue'
+import { VueCsspin } from './components/VueCsspin.vue'
 
 const install = (app) => {
   app.component('vue-csspin', VueCsspin)
