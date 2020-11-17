@@ -17,8 +17,24 @@
         <option>cp-heart</option>
         <option>cp-meter</option>
     </select><br />
-    <button @click="viewVueCsspin">Test Component</button>
-    <vue-csspin v-if="visible" :message="message" :spin-style="spinStyle" />
+    opacity(0 &lt; x &lt; 1) : <input type="text" v-model.number="opacity" /><br />
+    background-color : 
+    <select v-model="color">
+        <option>black</option>
+        <option>white</option>
+        <option>red</option>
+        <option>yellow</option>
+        <option>blue</option>
+        <option>aqua</option>
+        <option>green</option>
+        <option>orange</option>
+        <option>brown</option>
+        <option>salmon</option>
+        <option>chocolate</option>
+        <option>bisque</option>
+    </select><br />
+    <button @click="viewVueCsspin">Test Spinner</button>
+    <vue-csspin v-if="visible" :message="message" :spin-style="spinStyle" :color="color" :opacity="opacity" />
   </div>
 </template>
 
@@ -34,7 +50,9 @@ export default {
     return { 
       visible: false,
       message: "Loading",
-      spinStyle : "cp-round"
+      spinStyle : "cp-round",
+      opacity : 0.3,
+      color : "black",
     };
   },
   methods : {

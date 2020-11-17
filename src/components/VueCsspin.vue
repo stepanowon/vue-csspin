@@ -1,5 +1,5 @@
 <template>
-  <div class="vue-csspin-modal">
+  <div class="vue-csspin-modal" :style="{ backgroundColor:color, opacity:opacity }">
     <div class="vue-csspin-box">
         <div class="cp-spinner" :class="spinStyle"></div>
         <div style="margin:1rem;">{{message}}</div>
@@ -13,6 +13,14 @@ export default {
     props : {
         message : { type:String, default:"Loading" },
         spinStyle : { type:String, default:"cp-round" },
+        opacity : { 
+            type:Number,  
+            default: 0.2,
+            validator : function(value) {
+                return value >= 0 && value <= 1 
+            } 
+        },
+        color : { type:String, default:"black" } 
     } 
 }
 </script>
@@ -20,8 +28,7 @@ export default {
 <style scoped>
 .vue-csspin-modal { display: block; position: fixed; z-index: 1; 
     left: 0; top: 0; width: 100%; height: 100%;
-    overflow: auto; background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.1); }
+    overflow: auto; }
 .vue-csspin-box {   display: flex; flex-direction: column;
     align-items: center; justify-content: center;
     width:200px; height:200px; margin-top: -100px; margin-left:-100px; 
