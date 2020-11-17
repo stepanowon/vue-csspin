@@ -12,7 +12,7 @@ This project is an wrapper of [CSSPIN](https://www.npmjs.com/package/csspin)
 ------------
 
 > Author : Stephen Won(원형섭), OpenSG Inc.        
-> Online Demo2 : https://vue-csspin.vercel.app/
+> Online Demo : https://vue-csspin.vercel.app/
 
 ## License
 MIT 
