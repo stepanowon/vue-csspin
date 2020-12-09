@@ -148,7 +148,7 @@ yarn add vue-csspin
 </template>
 
 <script>
-import { VueCsspin } from './components/VueCsspin.vue'
+import { VueCsspin } from 'vue-csspin'
 
 export default {
   name: 'App',
