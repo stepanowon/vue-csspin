@@ -2,6 +2,8 @@
 Spinner Component for Vue.js 3.x.
 This project is an wrapper of [CSSPIN](https://www.npmjs.com/package/csspin)
 
+csspin for vue 2.x is [here](https://github.com/stepanowon/vue2-csspin)
+
 [![npm](https://img.shields.io/npm/v/vue-csspin.svg )](https://www.npmjs.com/package/vue-csspin)
 [![npm](https://img.shields.io/npm/dm/vue-csspin.svg)](https://www.npmjs.com/package/vue-csspin)
 [![GitHub stars](https://img.shields.io/github/stars/stepanowon/vue-csspin.svg?style=social&label=Stars&style=for-the-badge)](https://github.com/stepanowon/vue-csspin/stargazers)
