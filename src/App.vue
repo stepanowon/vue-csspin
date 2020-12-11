@@ -51,8 +51,8 @@ export default {
       visible: false,
       message: "Loading",
       spinStyle : "cp-round",
-      opacity : 0.3,
-      color : "black",
+      opacity : 0.7,
+      color : "white",
     };
   },
   methods : {
