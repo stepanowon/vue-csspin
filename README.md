@@ -77,8 +77,8 @@ MIT
           visible: false,
           message: "Loading",
           spinStyle : "cp-round",
-          opacity : 0.3,
-          color : "black",
+          opacity : 0.7,
+          color : "white",
         };
       },
       methods : {
@@ -161,8 +161,8 @@ export default {
       visible: false,
       message: "Loading",
       spinStyle : "cp-round",
-      opacity : 0.3,
-      color : "black",
+      opacity : 0.7,
+      color : "white",
     };
   },
   methods : {
@@ -188,4 +188,9 @@ export default {
      - default : "cp-round"
      - available value : "cp-round", "cp-pinwheel", "cp-bubble", "cp-flip", "cp-hue", "cp-skeleton", "cp-eclipse", "cp-boxes", "cp-morph", "cp-heart", "cp-meter"
      - about more detail style ---> https://webkul.github.io/csspin/
-
+   * color
+     - type : String
+     - default : "white"
+   * opacity
+     - type : number(0 < x < 1)
+     - default : 0.7
